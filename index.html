@@ -1,1 +1,37 @@
-Hello World
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js" crossorigin></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin></script>
+
+</head>
+<body>
+    <div id="mydiv"></div>
+    
+    <script type="text/babel">
+    class Hello extends React.Component {
+      render() {
+        return <h1>Welcome to Ada's World!</h1>
+      }
+    }
+    
+    ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+    </script>
+
+    <div>&#9734;</div>
+    <div>&#9733;</div>
+    <div>&star;</div>
+    <div>&starf;</div>
+    <div>&bigstar;</div>
+    <span style="font-size:300%;color:yellow;">&starf;</span>
+    <span style="font-size:500%;color:red;">&star;</span>
+    <span style="font-size:500%;color:blue;">&bigstar;</span>
+
+</body>
+</html>

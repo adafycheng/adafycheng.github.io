@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lagn="zh-hk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <style>
+      .container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -webkit-mask-image: url(#mask);
+        mask-image: url(#mask);
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ada's World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Songs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/?songName=蒙著嘴說愛你">蒙著嘴說愛你</a></li>
+                  <li><a class="dropdown-item" href="/?songName=蒙著嘴說愛你">Master Class</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/?songName=誰能明白我">誰能明白我</a></li>
+                </ul>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+              -->
+            </ul>
+            <form class="d-flex">
+              <input name="songName" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+      <div id="main" class="container">
+        <div class="transparent-bg">
+        <h1>Hi, I'm Ada.</h1>
+        <div class="d-flex justify-content-center">
+            This is my interactive resume.
+        </div>
+      </div>
+    </div>
+</body>
+</html>

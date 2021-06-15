@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lagn="zh-hk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+
+    <style>
+      .container1 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -webkit-mask-image: url(#mask-123);
+        mask-image: url(#mask-123);
+      }
+    </style>
+</head>
+<body>
+    <h1>Image Mask</h1>
+    <svg width="400" height="400">
+      <defs>
+        <mask id="mask-123">
+          <circle fill="#FFFFFF" cx="200" cy="200" r="200" />
+        </mask>
+      </defs>
+
+      <image width="400" height="400" xlink:href="images/adacheng.jpg" mask="url(#mask-123)"/> 
+    </svg>
+    
+    <!--
+    <div class="container">
+    </div>
+      
+      <svg width="660" height="220" style="outline: 1px solid red">  
+        <defs>  
+          <mask id="text-mask-1" x="0" y="0" width="100" height="100">  
+            <text x="30" y="140" font-family="Helvetica" font-weight="bold" font-size="7em" fill="#999">Text Mask</text>  
+          </mask>  
+        </defs>
+       
+        <image width="660" height="495" xlink:href="http://www.vanseodesign.com/blog/wp-content/uploads/2013/09/strawberry-fields.jpg" mask="url(#text-mask-1)"/>  
+       </svg>
+
+       
+       <svg width="660" height="220" style="outline: 1px solid red">  
+        <defs>  
+          <mask id="image-mask" x="0" y="0" width="1" height="1" >  
+            <image width="660" height="495" xlink:href="images/adacheng.jpg" />  
+          </mask>  
+        </defs>
+       
+        <g mask="url(#image-mask)">  
+          <circle cx="110" cy="110" r="100" fill="#c69" />  
+          <circle cx="310" cy="110" r="100" fill="#9c6" />  
+          <circle cx="510" cy="110" r="100" fill="#69c" />  
+        </g>  
+       </svg>
+
+       <svg width="500" height="500" style="outline: 1px solid red">  
+        <defs>  
+          <mask id="image-mask-2" x="0" y="0" width="1" height="1" >  
+            <image width="400" xlink:href="images/adacheng.jpg" />  
+          </mask>  
+        </defs>
+       
+        <g mask="url(#image-mask-2)">  
+            <circle cx="310" cy="110" r="300" />  
+        </g>  
+       </svg>
+
+       <svg width="400" height="400" style="outline: 1px solid red">  
+        <defs>  
+          <mask id="text-mask-3" x="0" y="0" width="100" height="100">  
+            <text x="30" y="140" font-family="Helvetica" font-weight="bold" font-size="7em" fill="#999">Text Mask</text>  
+          </mask>  
+        </defs>
+       
+        <image width="400" height="400" xlink:href="images/adacheng.jpg" mask="url(#text-mask-3)"/>  
+       </svg>
+       -->
+    </body>
+</html>

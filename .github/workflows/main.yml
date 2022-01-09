@@ -1,4 +1,4 @@
-name: CI, with security check using Snyk
+name: Code test using Snyk
 
 # Controls when the workflow will run
 on:
@@ -23,4 +23,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          command: test
+          command: code test
